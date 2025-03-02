@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaHackerrank, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
@@ -95,25 +95,25 @@ export default function Contact() {
                 </p>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://github.com/Theja7394"
                     className="text-gray-600 hover:text-primary dark:text-gray-300 transition-colors"
                     aria-label="GitHub"
                   >
                     <FaGithub size={24} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/thejana-walisundara-65343425a/"
                     className="text-gray-600 hover:text-primary dark:text-gray-300 transition-colors"
                     aria-label="LinkedIn"
                   >
                     <FaLinkedin size={24} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.hackerrank.com/profile/Thejana86"
                     className="text-gray-600 hover:text-primary dark:text-gray-300 transition-colors"
-                    aria-label="Twitter"
+                    aria-label="Hackerrank"
                   >
-                    <FaTwitter size={24} />
+                    <FaHackerrank size={24} />
                   </a>
                 </div>
               </div>
