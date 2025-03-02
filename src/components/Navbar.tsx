@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react'
 import { useTheme } from './theme-provider'
 import { motion } from 'framer-motion'
 import { FaSun, FaMoon } from 'react-icons/fa'
-import { useNavigate } from 'react-router-dom'  // Import useNavigate
+import { useNavigate } from 'react-router-dom'  
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
-  const navigate = useNavigate()  // Initialize useNavigate
+  const navigate = useNavigate()  
 
   useEffect(() => {
     setMounted(true)
