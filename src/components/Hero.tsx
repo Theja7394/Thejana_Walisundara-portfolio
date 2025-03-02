@@ -17,11 +17,10 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative w-48 h-48 mt-5 mb-6 rounded-full border-4 border-primary shadow-lg ring-4 ring-blue-500/50"
           >
-            <img
-              src="/thejana.jpg" 
-              alt="Thejana"
-              className="w-full h-full object-cover rounded-full"
-            />
+            <img src="/projects/thejana.jpg" 
+            alt="Thejana" 
+            className="w-full h-full object-cover rounded-full" />
+
           </motion.div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
