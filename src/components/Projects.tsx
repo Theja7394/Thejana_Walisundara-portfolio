@@ -3,11 +3,13 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
+const BASE_PATH = "/Thejana_Walisundara-portfolio"
+
 const projects = [
   {
     title: "Ruhuna Internship Portal",
     description: "Developing a web application for third-year undergraduates to manage internship selections...",
-    image: "/projects/ruhunaportal.png",
+    image: `${BASE_PATH}/projects/ruhunaportal.png`,
     tech: ["Next.js", "React", "Node.js", "Spring Boot", "MySQL", "Figma"],
     role: "Project Manager, Programmer & Database Designer",
     link: "#",
@@ -16,7 +18,7 @@ const projects = [
   {
     title: "ECO360X",
     description: "Designed and developed a system for biology students to follow courses and earn certificates...",
-    image: "/projects/eco360x.png",
+    image: `${BASE_PATH}/projects/eco360x.png`,
     tech: ["MySQL", "Java", "JavaFX", "Figma"],
     role: "Project Manager",
     link: "#",
@@ -25,7 +27,7 @@ const projects = [
   {
     title: "Hakmana EDM Project",
     description: "A standalone desktop application for managing inventories and employee details...",
-    image: "/projects/hakmana.jpeg",
+    image: `${BASE_PATH}/projects/hakmana.jpeg`,
     tech: ["MySQL", "Java", "JavaFX", "Figma"],
     role: "Project Manager & Database Operator",
     link: "#",
