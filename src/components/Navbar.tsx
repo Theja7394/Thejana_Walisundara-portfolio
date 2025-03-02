@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react'
 import { useTheme } from './theme-provider'
 import { motion } from 'framer-motion'
 import { FaSun, FaMoon } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'  // Import useNavigate
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate()  // Initialize useNavigate
 
   useEffect(() => {
     setMounted(true)
@@ -26,9 +28,12 @@ export default function Navbar() {
     <nav className="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-          <a href="/" className="text-xl font-bold gradient-text">
+          <button 
+            onClick={() => navigate('/')} 
+            className="text-xl font-bold gradient-text"
+          >
             Portfolio
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
